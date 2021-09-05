@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Mes notes (Django)</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+
+    <body>
+        <fieldset>
+            <legend class="fieldset-title">Mes notes (avec Django)</legend>
+            <div class="box">
+                <div class="box1">
+                    <table>
+                        <tbody>
+                            {%for one_note in all_notes %}
+                            <tr>
+                                <td>
+                                <form action = "{% url 'notesDelete' one_note.id %}" method = "post"> 
+                                    
+                                    <!-- Protection -->
+                                    {% csrf_token %}
+                                    
+                                    <input class="buttonSupprimer" type = "submit" 
+                                    onclick="return confirm('Voulez-vous vraiement supprimer cette note ? (Note ID #{{one_note.id}}, contenu : {{one_note.content}})')"
+                                    value = "Supprimer">
+
+                                </form>
+                                </td>
+                                <td class="label">
+                                    {{one_note.content}}
+                                </td>
+                            </tr>
+                            {% empty %}
+                            <p class="label">Il n'y a aucune note pour le moment</p>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="box2">
+                    <form action = "{% url 'notesAdd' %}" method = "post">
+                        
+                        <!-- Protection -->
+                        {% csrf_token %}
+                        
+                        <!-- Ajout de required afin d'empecher d'ajouter des lignes vierges -->
+                        <input class="inputNote" type = "text" name = "content_of_inputNote" required>
+                        <input class="buttonAjouter" type="submit" value="Ajouter">
+                    </form>
+                </div>
+            </div>
+        </fieldset>
+    </body>
+</html>

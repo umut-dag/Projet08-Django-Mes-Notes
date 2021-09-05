@@ -1,0 +1,85 @@
+body {
+    background-image: linear-gradient(to left, #6c94ec 0%, #29279c 100%);
+    font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+    padding:0;
+    margin: 0;
+
+    display: flex;
+    height: 100vh;                      /* Centrer verticalement */
+    justify-content: center;
+    align-items: center;
+}
+
+
+fieldset {
+    border-color: rgb(255, 255, 255);
+    padding: 30px 30px;
+}
+
+.fieldset-title {
+    color: rgb(255, 255, 255);
+    
+    font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    
+    padding: 0 15px;
+}
+
+.box {
+    width: 600px;
+}
+
+.box2 {
+    padding-top: 20px;
+}
+
+.label{
+    padding: 10px;
+}
+
+
+.buttonSupprimer {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+
+.buttonSupprimer:hover{
+    cursor: pointer;
+    background-color: rgb(219, 64, 64);
+    color: rgb(255, 255, 255);
+  }
+  
+.inputNote {
+    width:75%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.buttonAjouter {
+    background-color: #ecb602;
+    color: rgb(65, 53, 0);
+
+    font-size: 16px;
+    font-weight: bold;
+    
+    
+    border: none;
+    border-radius: 5px;
+    
+    padding: 10px 25px;
+
+    float: right;
+}
+
+.buttonAjouter:hover{
+    cursor: pointer;
+    background-color: rgb(35, 175, 0);
+    color: rgb(255, 255, 255);
+  }
