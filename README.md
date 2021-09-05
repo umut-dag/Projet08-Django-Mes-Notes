@@ -7,7 +7,10 @@
 
 
 ## Capture d'écran
-</br><img src="https://raw.githubusercontent.com/umut-dag/Projet08-Django-Mes-Notes/main/screenshots/2021-09-05_015735.jpg" alt="Capture d'écran"/></br>
+
+<img src="https://raw.githubusercontent.com/umut-dag/Projet08-Django-Mes-Notes/main/screenshots/2021-09-05_040747.jpg" alt="Capture d'écran"/></br>
+
+<img src="https://raw.githubusercontent.com/umut-dag/Projet08-Django-Mes-Notes/main/screenshots/2021-09-05_015735.jpg" alt="Capture d'écran"/></br>
 
 <img src="https://raw.githubusercontent.com/umut-dag/Projet08-Django-Mes-Notes/main/screenshots/2021-09-05_015805.jpg" alt="Capture d'écran"/></br>
 
