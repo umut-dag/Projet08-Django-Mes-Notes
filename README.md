@@ -25,25 +25,38 @@
 <img src="https://raw.githubusercontent.com/umut-dag/Projet08-Django-Mes-Notes/main/screenshots/2021-09-05_022128.jpg" alt="Capture d'écran"/></br>
 
 
-## Installation
+---
 
-#### Cloner le projet depuis Github :
+# Installation
+
+#### Cloner le projet :
 ```
 git clone https://github.com/umut-dag/Projet08-Django-Mes-Notes.git
 ```
-#### Sur votre ordinateur :
+
+#### Il est conseillé de travailler dans un environnement virtuel :
+```
+python -m venv venv
+.\venv\Scripts\activate
+```
+
+#### Installation des dépendances :
 ```
 pip install -r requirements.txt
 ```
+
+#### Création des tables dans la base de données :
 ```
 python manage.py migrate
 ```
+
+#### Lancement du serveur :
 ```
 python manage.py runserver
 ```
 
 
-## Emulation
+# Emulation
 
 ### Sur votre navigateur préféré
 
