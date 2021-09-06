@@ -6,7 +6,7 @@
 - L'application a été développée en *Python* via *Django* avec frontEnd *HTML/CSS/JQuery*</br></br>
 
 
-## Capture d'écran
+## Captures d'écran
 
 <img src="https://raw.githubusercontent.com/umut-dag/Projet08-Django-Mes-Notes/main/screenshots/2021-09-05_040747.jpg" alt="Capture d'écran"/></br>
 
@@ -55,17 +55,14 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-
 # Emulation
 
-### Sur votre navigateur préféré
-
-#### Page principale :
+#### Entrer l'adresse suivante dans la barre d'adresse de votre navigateur Web :
 ```
 http://localhost:8000/
 ```
 
-####  Accéder à la page d'administration :
+####  Pour accéder à la page d'administration :
 ```
 http://localhost:8000/admin/
 Login = admin
